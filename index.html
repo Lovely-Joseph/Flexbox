@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url("images/nature.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 0px;
+			margin: 0px;
+		}
+		.menu{
+			background: rgba(0, 0, 0, 0.6);
+			padding: 14px;
+		}
+		ul{
+			width: 60%;
+			margin: auto;
+			text-align: center;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		ul li{
+			list-style: none;
+			color: white;
+		}
+		ul li a{
+			text-decoration: none;
+			color: white;
+			display: block;
+		}
+		li a:hover{
+			color: pink;
+		}
+
+		.frstdiv{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 140px;
+		}
+		.box{
+			background: rgba(0, 0, 0, 0.4);
+			padding: 20px;
+			color: white;
+			width: 25%;
+			font-size: 18px;
+		}
+		
+		.footer{
+			background: rgba(0, 0, 0, 0.6);
+			color: white;
+			text-align: center;
+			padding: 10px;
+			position: fixed;
+    		bottom: 0;
+    		width: 100%;
+		}
+		@media screen and (max-width: 768px){
+
+			.frstdiv{
+				flex-direction: column;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+			.box{
+				width: 98%;
+				padding: 5px;
+				margin-top: 10px;
+		}
+			ul{
+			width: 60%;
+			padding: 12px 0px;
+			justify-content: space-around;
+		}
+		.footer{
+			background: rgba(0, 0, 0, 0.6);
+			color: deeppink;
+			text-align: center;
+			padding: 10px;
+			margin-top: 14px;
+			position: relative;
+    		bottom: 0;
+    		width: auto;
+		}
+		.menu{
+			margin: auto;
+			padding: 0px;
+		}
+	}
+		@media screen and (max-width: 350px){
+		ul{
+			width: 100%;
+			padding: 12px 0px;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		}
+	</style>
+</head>
+<body>
+	<a href="#" class="togglebtn">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</a>
+	<div class="menu">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Gallery</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+
+	</div>
+	<div class="frstdiv">
+		<div class="box">
+			<h2>Heading</h2>
+			<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+		</div>
+		<div class="box">
+			<h2>Heading</h2>
+			<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+			</p>
+		</div>
+		<div class="box">
+			<h2>Heading</h2>
+			<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of  a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+			</p>
+		</div>
+	</div>
+	<div class="footer">
+		<p>@copy right reserved</p>
+	</div>
+
+</body>
+</html>
